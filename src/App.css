@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 20px 0 12px;
+  color: #555;
+}
+
+/* 입력 영역 */
+.input-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-area input:focus {
+  border-color: #3498db;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-area button:hover {
+  background-color: #2980b9;
+}
+
+/* 할일 아이템 */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-info {
+  flex: 1;
+}
+
+.todo-title {
+  font-size: 16px;
+}
+
+.todo-date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.todo-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-complete {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-complete:hover {
+  background-color: #27ae60;
+}
+
+.btn-cancel {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #e67e22;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-edit {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #8e44ad;
+}
+
+.btn-save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #27ae60;
+}
+
+/* 정렬 버튼 */
+.sort-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.sort-area button {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sort-area button:hover {
+  background-color: #ecf0f1;
+}
+
+.sort-area button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* 수정 입력 */
+.edit-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* 빈 목록 */
+.empty-message {
+  text-align: center;
+  color: #aaa;
+  padding: 20px;
+  font-size: 14px;
+}
