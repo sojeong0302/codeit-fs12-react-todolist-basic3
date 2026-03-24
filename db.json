@@ -1,0 +1,23 @@
+{
+  "todos": [
+    {
+      "title": "코테",
+      "completed": false,
+      "createdAt": "2026-03-24T02:39:40.193Z",
+      "id": "q3LarXMlfwg"
+    },
+    {
+      "title": "미션",
+      "completed": false,
+      "createdAt": "2026-03-24T02:39:46.885Z",
+      "id": "FuotM5q5TwA"
+    },
+    {
+      "title": "블로그",
+      "completed": true,
+      "createdAt": "2026-03-24T02:39:59.160Z",
+      "id": "xUKZVoONvxQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
